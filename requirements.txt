@@ -1,0 +1,28 @@
+# Stock Narrative Engine — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# ── News fetching ─────────────────────────────────────────────────────────
+feedparser>=6.0.11          # RSS/Atom feed parsing
+requests>=2.31.0            # HTTP requests (NewsAPI, Finnhub, Alpha Vantage, Ollama)
+
+# ── Market data ───────────────────────────────────────────────────────────
+yfinance>=0.2.40            # Stock prices, historical data, fundamentals
+
+# ── Terminal output ───────────────────────────────────────────────────────
+rich>=13.7.0                # Beautiful terminal formatting, tables, panels
+
+# ── AI providers (install only what you need) ─────────────────────────────
+anthropic>=0.26.0           # Claude (Anthropic)
+openai>=1.30.0              # GPT-4 (OpenAI)
+google-generativeai>=0.5.0  # Gemini (Google)
+# Ollama uses plain HTTP via requests — no extra package needed
+
+# ── Optional — desktop notifications ─────────────────────────────────────
+# plyer>=2.1.0              # Uncomment for desktop pop-up notifications
+
+# ── Optional — scheduled runs ─────────────────────────────────────────────
+# schedule>=1.2.1           # Uncomment to use the built-in scheduler
+
+# ── Dev / testing ─────────────────────────────────────────────────────────
+# pytest>=8.0.0
+# pytest-cov>=5.0.0
